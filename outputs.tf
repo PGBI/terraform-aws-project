@@ -23,7 +23,12 @@ output "tags" {
   value = {
     managedBy     = "terraform"
     vcsRepository = var.vcs_repo
-    projectName     = var.name
+    projectName   = var.name
     workspace     = terraform.workspace
   }
+}
+
+output "name_prefix" {
+  description = "Prefix that will be added to the name of any resources created using a PGBI terraform module."
+  value       = terraform.workspace == "default" ? var.name : "${terraform.workspace}-${var.name}"
 }

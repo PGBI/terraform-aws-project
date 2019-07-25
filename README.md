@@ -7,7 +7,7 @@ It does not create any resources by itself.
 
 Usage:
 
-```
+```hcl
 module "project" {
   source  = "PGBI/project/aws"
   version = "~>0.1.0"
