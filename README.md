@@ -1,11 +1,13 @@
 # Project module
 
+## Description
+
 This module is used to setup some default values that will be passed and used by other modules belonging to the [PGBI
 terraform registry](https://registry.terraform.io/modules/PGBI).
 
 It does not create any resources by itself.
 
-Usage:
+## Usage
 
 ```hcl
 module "project" {
